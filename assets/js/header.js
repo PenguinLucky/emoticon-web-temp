@@ -1,7 +1,7 @@
 jQuery(function() {
 
     var xhr = new XMLHttpRequest();
-    xhr.open( "GET" , "https://emoticon-bot.tk/header" );
+    xhr.open( "GET" , "https://emoticon-bot.tk/header/index.html" );
     xhr.send();
   
     xhr.onreadystatechange = function() {

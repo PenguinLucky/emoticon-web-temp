@@ -1,0 +1,104 @@
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Light.woff);
+    font-weight:300
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Book.woff);
+    font-weight:400
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Medium.woff);
+    font-weight:500
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Semibold.woff);
+    font-weight:600
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Bold.woff);
+    font-weight:700
+}
+
+body{
+    font-family:Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:17px;
+    background-color:#36393e;
+    color:#dcddde;
+}
+
+.search {
+    border:1.5px solid #FFF;
+    padding: 40px;
+}
+
+.search p {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.search-text {
+    padding: 3px;
+    border:3px solid #3498DB;
+    border-radius:5px;
+}
+
+.search-submit {
+    border:3px solid #3498DB;
+    height: 30px;
+    border-radius:5px;
+}
+
+.list {
+    border:1.5px solid #FFF;
+    padding: 40px;
+}
+
+.list p {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.list iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.my-parts {
+    color: #333;
+}
+
+.my-parts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.my-parts ul li a {
+    display: block;
+    padding: .4em .8em;
+    text-decoration: none;
+    background: #fff;
+    color: #333;
+    text-align: left;
+    margin: .2em 0;
+    width: 90%;
+}
+
+.my-parts ul li a:hover {
+    background: #eee;
+}
+
+.error {
+    background-color: #FFF;
+    border-radius:5px;
+    color: #ff0000;
+}

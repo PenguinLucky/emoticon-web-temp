@@ -1,0 +1,56 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    width: 35%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #212529;
+    z-index: 100;
+    margin-left: calc(35% + 25px);
+}
+
+.dropdown-menu a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #212529;
+    padding: 10px 0;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: none;
+    background-color: #cfcfcf;
+}
+
+.dropdown-menu-p {
+    width: 100%;
+    margin: 0;
+}
+
+.news {
+    list-style: none;
+    padding-left: 50px;
+}
+
+.news li a {
+    color: #67c5ff;
+}
+
+@media only screen and (max-width: 750px) {
+    .dropdown-menu { width: 84%; margin-left: 0; }
+    .news { padding-left: 10px; }
+}

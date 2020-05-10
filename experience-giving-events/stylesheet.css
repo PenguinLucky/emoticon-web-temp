@@ -1,0 +1,161 @@
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.tk/assets/font/Whitney_Light.woff);
+    font-weight:300
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.tk/assets/font/Whitney_Book.woff);
+    font-weight:400
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.tk/assets/font/Whitney_Medium.woff);
+    font-weight:500
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.tk/assets/font/Whitney_Semibold.woff);
+    font-weight:600
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.tk/assets/font/Whitney_Bold.woff);
+    font-weight:700
+}
+
+body{
+    font-family:Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:17px;
+    background-color:#36393e;
+    color:#dcddde;
+    margin-top: 85px;
+}
+
+.title {
+    font-size: 300%;
+    margin: 10% 10%;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 200%;
+    margin: auto;
+    width: 70%;
+}
+
+.pre{
+    font-family:Consolas,"Courier New",Courier,monospace;
+    margin-top:4px;
+    padding:8px;
+    border:2px solid;
+    border-radius:5px;
+    width: 70%;
+    margin: auto;
+    font-size: 150%;
+    padding: 30px;
+    background-color:#2f3136!important;
+    border-color:#282b30!important;
+    color:#bfbfbf!important;
+}
+
+.link {
+    color: #3498db;
+}
+
+.graph {
+    width: 600px;
+    height: 371px;
+}
+
+.space {
+    height: 200px;
+}
+
+.home-btn {
+    text-align:center;
+}
+
+.btn-cross {
+    display: inline-block;
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    text-decoration: none;
+    font-weight: bold;
+    color: #03A9F4;
+    font-size: 50px;
+}
+
+.btn-cross:before, .btn-cross:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: black;
+    transition: .3s;
+}
+
+.btn-cross:before {
+    left: 7px;
+}
+
+.btn-cross:after {
+    right: 7px;
+}
+
+.btn-cross:hover:before {
+    top: 0px;
+    left:0;
+    height: 100%;
+}
+
+.btn-cross:hover:after {
+    top: 0px;
+    right: 0;
+    height: 100%;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .pre {
+        padding: 10px;
+        width: 100%;
+        font-size: 100%;
+    }
+
+    .graph {
+        width: 100%;
+        height: 100%;
+    }
+
+    .space {
+        height: 100px;
+    }
+
+    .title {
+        margin: 20% 0;
+        text-align: center;
+        width: 100%;
+        font-size: 200%;
+    }
+    
+    .sub-title {
+        margin: 0 0 ;
+        text-align: center;
+        width: 100%;
+        font-size: 150%;
+    }
+
+    .btn-cross {
+        font-size: 30px;
+    }
+
+}

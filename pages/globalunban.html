@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+        <title>顔文字Bot　サポート</title>
+        <link rel="favicon icon" href="img/favicon.png">
+
+        <meta charset=utf-8>
+        <link rel="stylesheet" href="css/redirect.css">
+
+        <meta property="og:url" content="https://emoticon-bot.f5.si/globalban" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="顔文字で返してくるうざいBot　グローバルBan" />
+        <meta property="og:description" content="グローバルBan 詳細ページ" />
+        <meta property="og:site_name" content="顔文字で返してくるうざいBot　サポート" />
+        <meta property="og:image" content="https://emoticon-bot.f5.si/img/favicon.png" />
+
+        <script>
+            var urlHash = location.hash;
+            urlHash = urlHash.slice( 1 );
+
+            if ( urlHash != "" ) {
+                location.href="https://emoticon-web.herokuapp.com/globalunban/"+urlHash+".html";
+            } else {
+                location.href="https://emoticon-web.herokuapp.com/";
+            }
+        </script>
+
+    </head>
+</html>

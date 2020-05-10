@@ -1,0 +1,33 @@
+.status-p {
+    width: 294px;
+    font-size: 19px;
+    background-color: #2f3136;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.status-p span {
+    display: inline-block;
+    width: 50%;
+    height: 28px;
+}
+
+.status-p img {
+    width:auto;
+    height:1em;
+    margin:0 1px;
+    vertical-align:-.2em
+}
+
+.status {
+    color: #000;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .status-p {
+        width: 100%;
+    }
+}

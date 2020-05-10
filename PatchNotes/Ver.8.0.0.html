@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+
+        <title>顔文字Bot　パッチノート　Ver.8.0.0 ～ </title>
+        <link rel="favicon icon" href="../assets/img/favicon.png">
+
+        <meta charset=utf-8>
+        <meta name=viewport content="width=device-width">
+
+        <link rel="stylesheet" href="../assets/css/patch-notes.css">
+        <link rel="stylesheet" href="../assets/css/status.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152602355-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-152602355-1');
+        </script>
+
+        <meta property="og:url" content="https://emoticon-bot.tk/PatchNotes/Ver.8.0.0" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="顔文字で返してくるうざいBot　Ver.8.0.0 ～ " />
+        <meta property="og:description" content="Ver.8.0.0 ～  の パッチノート" />
+        <meta property="og:site_name" content="顔文字で返してくるうざいBot　Ver.8.0.0 ～ " />
+        <meta property="og:image" content="https://emoticon-bot.tk/assets/img/favicon.png" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="../assets/js/top-scroll.js"></script>
+        <script src="../assets/js/anchor.js"></script>
+        <script src="../assets/js/status.js"></script>
+        <script src="../assets/js/header.js"></script>
+        <div id="page_top"><a href="#"></a></div>
+
+    </head>
+    <body>
+
+        <header></header>
+
+        <div class=info>
+            <div class="patchnote-title">パッチノート　Ver.8.0.0 ～ </div>
+
+            <div class="status-p" ><span>ステータス</span><span class="status" >&nbsp;<img src="https://emoticon-bot.tk/assets/img/road.gif" alt="ステータス" align="top">&nbsp;読み込み中</span></div>
+
+            <div><a class=href_head href="https://emoticon-bot.tk">🏠 ホーム</a></div>
+            <div><a class=href_head href="Ver.7.0.0">◀ 前のバージョン (Ver.7.0.0)</a></div>
+            <div><a class=href_head href="Ver.9.0.0">▶ 次のバージョン (Ver.9.0.0)</a></div>
+        </div>
+
+        <div class=chatlog>
+            <div class=chatlog__message-group>
+                <div class=chatlog__author-avatar-container></div>
+                <div class=chatlog__messages>
+                    <div class=chatlog__message>
+                        <div class=chatlog__content>
+                            <span class=markdown>
+<p class="ver-title"><strong>Ver.8.0.0</strong></p>
+
+<a href="#Ver-8-0-0" class="btn-flat-border">Ver.8.0.0</a>　<a href="#Ver-8-0-1" class="btn-flat-border">Ver.8.0.1</a>　<a href="#Ver-8-0-2" class="btn-flat-border">Ver.8.0.2</a>
+<a href="#Ver-8-1-0" class="btn-flat-border">Ver.8.1.0</a>　<a href="#Ver-8-1-2" class="btn-flat-border">Ver.8.1.2</a>　<a href="#Ver-8-1-3" class="btn-flat-border">Ver.8.1.3</a>　<a href="#Ver-8-1-5" class="btn-flat-border">Ver.8.1.5</a>
+<a href="#Ver-8-2-0" class="btn-flat-border">Ver.8.2.0</a>
+<a href="#Ver-8-3-0" class="btn-flat-border">Ver.8.3.0</a>
+
+<p class="ver-line" id="Ver-8-0-0">Ver.8.0.0　<span class="ver-day">2019/11/21</span>　<a href="#Ver-8-0-0"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>大規模なデバックを開始</u></strong>
+コードの書き方を全体的に変更しました。
+バグを早く発見して早く修正したいので、公開式のデバックにしました。
+このデバックと同時にデーターベースの情報が、戻ってしまったりする可能性があります。
+あと、Botがオフラインになる回数が上がる可能性があります。
+
+<u><strong>言語設定!!</u></strong>
+参加時、何かのアクションをしたときに setup を実行していなかった場合、自動でサーバーの地域に合わせた言語になります。
+※地域が、日本以外の場合は、英語になります。
+
+Discord 地域一覧
+<div class="pre pre--multiline">地域：設定される言語
+
+Brazil：英語
+Europe：英語
+Hong Kong：英語
+India：英語
+Japan：日本語
+Russia：英語
+Singapore：英語
+South Africa：英語
+Sydney：英語
+US (省略)：英語</div>
+
+<u><strong>クールダウン!!</u></strong>
+カジノコマンドにクールダウンを追加しました。
+<div class="pre pre--multiline">コイン：2秒
+スロット：1秒
+じゃんけん：10秒
+スロット(勝ち確定)：5秒</div>
+
+
+<p class="ver-line" id="Ver-8-0-0">Ver.8.0.1　<span class="ver-day">2019/11/22</span>　<a href="#Ver-8-0-0"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>事件</u></strong>
+エラーでの事件作成時、エラー内容を貼るように変更
+事件IDをエラー発生報告(実行者)に追加
+
+<u><strong>バグ修正</u></strong>
+未知のエラーだった場合のtracebackの出力がおかしい問題を修正
+権限エラーのスルー修正
+
+
+<p class="ver-line" id="Ver-8-0-2">Ver.8.0.2　<span class="ver-day">2019/11/23</span>　<a href="#Ver-8-0-2"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>FreeChannel</u></strong>
+FreeChannelシステムでカテゴリーで作成できる最大数を超えた時、Errorを返さないように変更。
+
+<u><strong>エラー報告</u></strong>
+エラー報告のメッセージ関数が間違っていたので修正。
+
+
+<p class="ver-line" id="Ver-8-1-0">Ver.8.1.0　<span class="ver-day">2019/11/25</span>　<a href="#Ver-8-1-0"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>グローバルチャット</u></strong>
+グローバルチャットの軽量化。
+
+
+<p class="ver-line" id="Ver-8-1-2">Ver.8.1.2　<span class="ver-day">2019/11/25</span>　<a href="#Ver-8-1-2"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>定期更新機能</u></strong>
+定期更新機能にランキングも追加。
+※ User と Bot 両方実装
+
+
+<p class="ver-line" id="Ver-8-1-3">Ver.8.1.3　<span class="ver-day">2019/11/26</span>　<a href="#Ver-8-1-3"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>言語自動設定</u></strong>
+言語自動設定のバグ修正
+全サーバーの言語設定をリセットしました。
+
+
+<p class="ver-line" id="Ver-8-1-5">Ver.8.1.5　<span class="ver-day">2019/11/26</span>　<a href="#Ver-8-1-5"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>データベース</u></strong>
+データベースをDropBoxにアップロードするコマンドを追加。
+
+
+<p class="ver-line" id="Ver-8-2-0">Ver.8.2.0　<span class="ver-day">2019/11/28</span>　<a href="#Ver-8-2-0"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>確認済みユーザー</u></strong>
+グローバルチャットの確認済みユーザーを役職管理に変更。
+それに伴い、公式サーバーに参加していなかった確認済みユーザーは、確認済みユーザーではなくなります。
+
+移行ログを貼り付けておきます。
+メッセージに飛びたい方へ：<strong><a class="href_head" href="https://discordapp.com/channels/636709292287852555/637210230148825103/649518631004274688" > Click here!! </a></strong>
+
+引き続き 確認済みユーザー になる人：<img class=anchor-link src="../assets/img/maru.png" onerror="this.src='../assets/img/load-failure.png'">
+確認済みユーザー じゃなくなる人：<img class=anchor-link src="../assets/img/batu.png" onerror="this.src='../assets/img/load-failure.png'">
+<div class="pre pre--multiline">データーベース取得中
+データーベース取得完了
+役職付与中
+<img class=anchor-link src="../assets/img/maru.png" onerror="this.src='../assets/img/load-failure.png'"> BS.あおぞら に役職を付けました。
+<img class=anchor-link src="../assets/img/maru.png"> ?Sw()m%kLc$VfD!! に役職を付けました。
+<img class=anchor-link src="../assets/img/maru.png"> 404 NotFound に役職を付けました。
+<img class=anchor-link src="../assets/img/batu.png"> のーねーむ.exe に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/batu.png"> beryllium.jp に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/batu.png"> FaberSid に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/batu.png"> Tone Jr. Dai に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/batu.png"> ねこ （本垢） に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/batu.png"> 葵 -あおい- に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/maru.png"> ごりごりマッチョキチガイ に役職を付けました。
+<img class=anchor-link src="../assets/img/batu.png"> グリル＠マオちゃんなのだよ に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/maru.png"> Shima に役職を付けました。
+<img class=anchor-link src="../assets/img/maru.png"> みるくてぃ に役職を付けました。
+<img class=anchor-link src="../assets/img/maru.png"> サロにぃ/Saroniii に役職を付けました。
+<img class=anchor-link src="../assets/img/batu.png"> ななせまる に役職を付けれませんでした。
+<img class=anchor-link src="../assets/img/maru.png"> 陸ステ＠rspnet.jp代表者 に役職を付けました。
+<img class=anchor-link src="../assets/img/maru.png"> PenguinLucky に役職を付けました。
+処理終了</div>
+
+
+<p class="ver-line" id="Ver-8-3-0">Ver.8.3.0　<span class="ver-day">2019/11/28</span>　<a href="#Ver-8-3-0"><img class=anchor-link src="../assets/img/anchor_link.png"></a></p>
+<u><strong>利用規約</u></strong>
+グローバルチャットで初めて喋った時に、利用規約に同意するメッセージを送信するように変更。
+利用規約更新時にも送信されます。
+
+                            </span>
+                        </div>
+
+                        <a href="https://emoticon-bot.tk" class="btn-cross">ホームへ</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,105 @@
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Light.woff);
+    font-weight:300
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Book.woff);
+    font-weight:400
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Medium.woff);
+    font-weight:500
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Semibold.woff);
+    font-weight:600
+}
+
+@font-face{
+    font-family:Whitney;
+    src:url(https://emoticon-bot.f5.si/font/Whitney_Bold.woff);
+    font-weight:700
+}
+
+@font-face{
+    font-family: "title";
+    src:url(https://emoticon-bot.f5.si/font/spincycle_ot.otf);
+}
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+@media only screen and (max-width: 750px) {
+.pc { display: none !important; }
+.sp { display: block !important; }
+}
+
+body{
+    font-family:Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 100%;
+    background-color:#36393e;
+    color:#FFF;
+}
+
+.support-title {
+    font-size: 50px;
+    display: block;
+    height: 70px;
+    text-align:center;
+
+    background-color: #03A9F4;
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+.btn {
+    width: 100vh;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: .4s;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.title-pc {
+    font-size: 50px;
+}
+
+.title-sp {
+    font-size: 30px;
+}
+
+.support-title p {
+    margin: 0%;
+}
+
+.space {
+    height: 100px;
+}
+
+.question {
+    font-size: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
+    cursor : pointer;
+}
+
+@media only screen and (max-width: 750px) {
+
+}
